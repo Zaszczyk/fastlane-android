@@ -1,6 +1,6 @@
-#based on jazzy.pro
-
 FROM ubuntu:16.04
+
+#based on jazzy.pro
 
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
