@@ -1,3 +1,5 @@
+#based on jazzy.pro
+
 FROM ubuntu:16.04
 
 ENV HOME /root
@@ -95,4 +97,4 @@ ENV GRADLE_HOME $HOME/opt/gradle
 #RUN chmod a+x /root/ci-scripts/*
 #ENV PATH /root/ci-scripts:$PATH
 
-RUN while true; do sleep 1000; done
+#RUN while true; do sleep 1000; done
