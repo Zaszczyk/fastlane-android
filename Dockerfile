@@ -41,6 +41,9 @@ RUN apt-get install -y ruby ruby-dev
 # Set ruby to use utf-8
 ENV RUBYOPT "-KU -E utf-8:utf-8"
 
+RUN export LC_ALL=en_US.UTF-8
+RUN export LANG=en_US.UTF-8
+
 # Install fastlane
 RUN gem install fastlane
 
