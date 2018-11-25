@@ -44,6 +44,9 @@ ENV RUBYOPT "-KU -E utf-8:utf-8"
 RUN export LC_ALL=en_US.UTF-8
 RUN export LANG=en_US.UTF-8
 
+RUN /bin/bash -c 'echo -e ".bashrc\n.bash_profile\n.zshrc\n.config/fish/config.fish" | while read f; do if [ -f $HOME/$f ]; then echo -e "export LC_ALL=en_US.UTF-8\nexport LANG=en_US.UTF-8" >> $HOME/$f; fi; done'
+
+
 # Install fastlane
 RUN gem install fastlane
 
