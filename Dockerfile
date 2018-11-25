@@ -13,7 +13,7 @@ ENV ANDROID_BUILD_TOOLS_VERSION 23.0.3
 # Install basic packages
 #
 RUN apt-get update
-RUN apt-get install -y software-properties-common build-essential curl
+RUN apt-get install -y software-properties-common build-essential curl libcurl3 libcurl3-gnutls libcurl4-openssl-dev
 
 #
 # Add repositories and update packages list
