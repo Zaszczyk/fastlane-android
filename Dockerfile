@@ -13,7 +13,8 @@ ENV ANDROID_BUILD_TOOLS_VERSION 23.0.3
 # Install basic packages
 #
 RUN apt-get update
-RUN apt-get install -y software-properties-common build-essential curl libcurl3 libcurl3-gnutls libcurl4-openssl-dev
+RUN add-apt-repository ppa:rwky/graphicsmagick
+RUN apt-get install -y software-properties-common build-essential curl libcurl3 libcurl3-gnutls libcurl4-openssl-dev imagemagick graphicsmagick librsvg2-bin
 
 #
 # Add repositories and update packages list
